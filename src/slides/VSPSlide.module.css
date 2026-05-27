@@ -1,0 +1,161 @@
+.vspSlide {
+  background: var(--background);
+  padding: 0 0 44px 0;
+}
+
+.orb1 {
+  width: 400px;
+  height: 400px;
+  top: -100px;
+  right: -80px;
+  background: radial-gradient(circle at 40% 40%, var(--accent), color-mix(in srgb, var(--green) 30%, transparent) 50%, transparent 70%);
+}
+
+.orb2 {
+  width: 300px;
+  height: 300px;
+  bottom: -50px;
+  left: -60px;
+  background: radial-gradient(circle at 50% 50%, var(--purple-deep), color-mix(in srgb, var(--purple-deep) 25%, transparent) 60%, transparent 75%);
+}
+
+.body {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.eyebrow {
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  color: var(--accent);
+}
+
+.title {
+  font-size: clamp(28px, 3.2vw, 36px);
+  font-weight: 700;
+  letter-spacing: -0.8px;
+  color: var(--foreground);
+}
+
+.subtitle {
+  font-size: 15px;
+  font-weight: 400;
+  color: var(--muted-foreground);
+}
+
+/* Vertical timeline */
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.phase {
+  display: grid;
+  grid-template-columns: 24px 1fr;
+  gap: 16px;
+  padding-bottom: 20px;
+}
+
+.phaseMarker {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+}
+
+.phaseDot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--muted-foreground);
+  border: 2px solid var(--border);
+  flex-shrink: 0;
+  z-index: 2;
+}
+
+.phaseDotAccent {
+  width: 16px;
+  height: 16px;
+  background: var(--accent);
+  border-color: var(--accent);
+  box-shadow: 0 0 12px color-mix(in srgb, var(--accent) 50%, transparent);
+}
+
+.phaseDotFinal {
+  background: var(--foreground);
+  border-color: var(--foreground);
+}
+
+.phaseLine {
+  width: 2px;
+  flex: 1;
+  background: var(--border);
+  margin-top: 4px;
+}
+
+.phaseContent {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding-bottom: 4px;
+}
+
+.phaseHighlight .phaseContent {
+  background: color-mix(in srgb, var(--accent) 6%, transparent);
+  border: 1px solid color-mix(in srgb, var(--accent) 20%, transparent);
+  border-radius: 10px;
+  padding: 14px;
+  margin: -8px 0 0 -8px;
+}
+
+.phaseTitle {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--foreground);
+}
+
+.phaseDesc {
+  font-size: 13px;
+  font-weight: 400;
+  color: var(--muted-foreground);
+  line-height: 1.5;
+}
+
+.link {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--accent);
+  text-decoration: none;
+  margin-top: 2px;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.demoBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--accent);
+  background: color-mix(in srgb, var(--accent) 12%, transparent);
+  border: 1px solid color-mix(in srgb, var(--accent) 30%, transparent);
+  border-radius: 6px;
+  padding: 4px 10px;
+  width: fit-content;
+  margin-top: 4px;
+}
