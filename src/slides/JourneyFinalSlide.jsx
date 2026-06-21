@@ -44,6 +44,9 @@ export default function JourneyFinalSlide({ index, project }) {
         </EditableList>
       </div>
 
+      <div className="slide-footer-keywords">
+        <Editable as="span" id="journeyFinal.keywords" allowEmpty fallback="" />
+      </div>
       <BottomBar text={<Editable as="span" id="journeyFinal.footer">abapConf 2026</Editable>} />
     </Slide>
   )

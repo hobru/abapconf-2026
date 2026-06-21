@@ -84,6 +84,18 @@
   opacity: 0.6;
 }
 
+.cardHidden {
+  opacity: 0;
+  transform: translateY(16px) scale(0.96);
+  pointer-events: none;
+}
+
+.cardVisible {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  transition: opacity 0.45s ease, transform 0.45s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
 .stepNumber {
   font-size: 13px;
   font-weight: 800;
@@ -118,4 +130,11 @@
 
 .cardLink:hover {
   text-decoration: underline;
+}
+
+.cardLinks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 16px;
+  margin-top: 4px;
 }

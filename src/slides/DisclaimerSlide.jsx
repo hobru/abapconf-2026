@@ -56,7 +56,7 @@ export default function DisclaimerSlide({ index, project }) {
               <span className={styles.character}>🔮</span>
               <div className={styles.bubble}>
                 <Editable as="p" id="disclaimer.panel3.text" className={styles.bubbleText}>
-                  Now exploring the official SAP MCP Server, ABAP tools for VS Code, and Arc-1 from Marian!
+                  Now exploring the official SAP MCP Server and ABAP tools for VS Code!
                 </Editable>
               </div>
             </div>
@@ -69,10 +69,6 @@ export default function DisclaimerSlide({ index, project }) {
             <span className={styles.linkIcon}>📄</span>
             <Editable as="span" id="disclaimer.link.policy">SAP API Policy (PDF)</Editable>
           </a>
-          <a className={styles.link} href="https://marianfoo.github.io/arc-1/deployment/" target="_blank" rel="noopener noreferrer">
-            <span className={styles.linkIcon}>🧩</span>
-            <Editable as="span" id="disclaimer.link.arc1">Arc-1 by Marian</Editable>
-          </a>
         </div>
 
         {/* Personal project note */}
@@ -83,6 +79,9 @@ export default function DisclaimerSlide({ index, project }) {
         </div>
       </div>
 
+      <div className="slide-footer-keywords">
+        <Editable as="span" id="disclaimer.keywords" allowEmpty fallback="" />
+      </div>
       <BottomBar text={<Editable as="span" id="disclaimer.footer">abapConf 2026</Editable>} />
     </Slide>
   )

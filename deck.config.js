@@ -1,16 +1,19 @@
 import CoverSlide from './src/slides/CoverSlide.jsx'
 import DisclaimerSlide from './src/slides/DisclaimerSlide.jsx'
+import AboutMyselfSlide from './src/slides/AboutMyselfSlide.jsx'
 import ContextSlide from './src/slides/ContextSlide.jsx'
 import JourneyEarlySlide from './src/slides/JourneyEarlySlide.jsx'
 import PVASlide from './src/slides/PVASlide.jsx'
 import VSPSlide from './src/slides/VSPSlide.jsx'
 import JourneyLateSlide from './src/slides/JourneyLateSlide.jsx'
 import JourneyFinalSlide from './src/slides/JourneyFinalSlide.jsx'
-import ArchitectureSlide from './src/slides/ArchitectureSlide.jsx'
-import RepoSlide from './src/slides/RepoSlide.jsx'
+import DeploymentStrategySlide from './src/slides/DeploymentStrategySlide.jsx'
 import InsightsSlide from './src/slides/InsightsSlide.jsx'
-import WhatsNextSlide from './src/slides/WhatsNextSlide.jsx'
-import { GenericThankYouSlide as ThankYouSlide } from '@deckio/deck-engine'
+import AdoDevOpsSlide from './src/slides/AdoDevOpsSlide.jsx'
+import AiSdlcSlide from './src/slides/AiSdlcSlide.jsx'
+import AbapAdtSlide from './src/slides/AbapAdtSlide.jsx'
+import TempHubSlide from './src/slides/TempHubSlide.jsx'
+import ThankYouSlide from './src/slides/ThankYouSlide.jsx'
 
 export default {
   id: 'cool-deck',
@@ -25,16 +28,19 @@ export default {
   slides: [
     CoverSlide,
     DisclaimerSlide,
+    AboutMyselfSlide,
     ContextSlide,
     JourneyEarlySlide,
     PVASlide,
     VSPSlide,
     JourneyLateSlide,
+    DeploymentStrategySlide,
     JourneyFinalSlide,
-    ArchitectureSlide,
-    RepoSlide,
     InsightsSlide,
-    WhatsNextSlide,
+    AdoDevOpsSlide,
+    AiSdlcSlide,
+    AbapAdtSlide,
+    TempHubSlide,
     ThankYouSlide,
   ],
 }

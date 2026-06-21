@@ -1,4 +1,4 @@
-.whatsNextSlide {
+.tempHubSlide {
   background: var(--background);
   padding: 0 0 44px 0;
 }
@@ -24,7 +24,7 @@
   z-index: 10;
   display: flex;
   flex-direction: column;
-  gap: 32px;
+  gap: 28px;
 }
 
 .header {
@@ -48,45 +48,21 @@
   color: var(--foreground);
 }
 
-.cards {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
-}
-
-.card {
-  position: relative;
-  overflow: hidden;
-  background: var(--secondary);
-  border: 1px solid var(--border);
-  border-radius: 16px;
-  padding: 24px;
+.figure {
+  flex: 1;
+  min-height: 0;
   display: flex;
-  flex-direction: column;
-  gap: 10px;
+  align-items: center;
+  justify-content: center;
 }
 
-.card::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 3px;
-  background: linear-gradient(90deg, var(--purple), var(--accent));
-  opacity: 0.6;
-}
-
-.cardTitle {
-  font-size: 16px;
-  font-weight: 600;
-  color: var(--foreground);
-  letter-spacing: -0.3px;
-}
-
-.cardDesc {
-  font-size: 13px;
-  font-weight: 400;
-  color: var(--muted-foreground);
-  line-height: 1.5;
+.image {
+  max-width: 80%;
+  max-height: 80%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  border-radius: 16px;
+  border: 1px solid var(--border);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.45);
 }

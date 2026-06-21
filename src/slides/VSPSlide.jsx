@@ -80,6 +80,9 @@ export default function VSPSlide({ index, project }) {
         </div>
       </div>
 
+      <div className="slide-footer-keywords">
+        <Editable as="span" id="vsp.keywords">VSC | \dev\abap-conf-2026 copilot | PM4</Editable>
+      </div>
       <BottomBar text={<Editable as="span" id="vsp.footer">abapConf 2026</Editable>} />
     </Slide>
   )

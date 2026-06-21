@@ -5,7 +5,7 @@ const steps = [
   { id: 'first-prototype', step: '01', title: 'First Prototype with VSP', desc: 'Started with VS Code, switched to Claude Code, then to GitHub Copilot CLI. Went from simple OData services to full SAP Fiori screens — just for the fun of it.' },
   { id: 'apim', step: '02', title: 'Azure APIM — Enterprise Ready', desc: 'Making it real: throttling, authentication, network connectivity from my laptop to the SAP system behind a firewall via VNet peering. Azure API Management tied it all together.' },
   { id: 'mcp-bridge', step: '03', title: 'MCP Bridge for OData', desc: 'Alice releases odata_mcp_go — now ALL OData services are available as MCP Servers. Game-changer for connectivity.', link: 'https://github.com/oisee/odata_mcp_go' },
-  { id: 'mcp-abap-idea', step: '04', title: 'MCP Server on SAP — The Idea', desc: 'Why stop at OData? Build an MCP Server that runs directly on the SAP system — with access to tables, BAPIs, and more.' },
+  { id: 'mcp-abap-idea', step: '04', title: "What's next?", desc: 'Why stop at OData? Build anything and see what vibecoding can do with ABAP' },
 ]
 
 export default function JourneyLateSlide({ index, project }) {
@@ -49,6 +49,11 @@ export default function JourneyLateSlide({ index, project }) {
         </div>
       </div>
 
+      <div className="slide-footer-keywords">
+        <span className="slide-footer-keywords-text">
+          Setup Team ABAP Squad | <a href="https://github.com/hobru/simple-abap-report" target="_blank" rel="noopener noreferrer">Repo</a> | Fix Issue
+        </span>
+      </div>
       <BottomBar text={<Editable as="span" id="journeyLate.footer">abapConf 2026</Editable>} />
     </Slide>
   )

@@ -1,4 +1,4 @@
-.insightsSlide {
+.aiSdlcSlide {
   background: var(--background);
   padding: 0 0 44px 0;
 }
@@ -46,16 +46,6 @@
   font-weight: 700;
   letter-spacing: -0.8px;
   color: var(--foreground);
-}
-
-.highlightMy {
-  color: #ff6a00;
-  font-weight: 800;
-}
-
-.highlightSap {
-  color: #0067ff;
-  font-weight: 800;
 }
 
 .figure {

@@ -20,9 +20,6 @@ export default function CoverSlide() {
           <h1>
             <Editable as="span" id="cover.titleBefore">Back to ABAP:</Editable> <Editable as="span" id="cover.titleHighlight" className={styles.highlight}>How Vibe Coding Brought a Lapsed Developer Back to Life</Editable>
           </h1>
-          <Editable as="p" id="cover.subtitle" multiline className={styles.subtitle}>
-            V5: Back to ABAP: How Vibe Coding Brought a Lapsed Developer Back to Life
-          </Editable>
 
           <div className={styles.meta}>
             <div className={styles.metaItem}>
@@ -48,6 +45,9 @@ export default function CoverSlide() {
         </div>
       </div>
 
+      <div className="slide-footer-keywords">
+        <Editable as="span" id="cover.keywords" allowEmpty fallback="" />
+      </div>
       <BottomBar text={<Editable as="span" id="cover.footer">cool-deck</Editable>} />
     </Slide>
   )

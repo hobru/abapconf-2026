@@ -76,6 +76,22 @@
   text-align: center;
 }
 
+.stopFinal {
+  grid-column: 6;
+}
+
+.stopHidden {
+  opacity: 0;
+  transform: translateY(16px) scale(0.94);
+  pointer-events: none;
+}
+
+.stopVisible {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  transition: opacity 0.45s ease, transform 0.45s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
 .station {
   position: relative;
   display: flex;

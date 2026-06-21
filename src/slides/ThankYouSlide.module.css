@@ -1,0 +1,117 @@
+.thankYouSlide {
+  background: var(--background);
+  padding: 0 0 44px 0;
+}
+
+.orb1 {
+  width: 420px;
+  height: 420px;
+  top: -100px;
+  right: -60px;
+  background: radial-gradient(circle at 40% 40%, var(--accent), color-mix(in srgb, var(--green) 30%, transparent) 50%, transparent 70%);
+}
+
+.orb2 {
+  width: 320px;
+  height: 320px;
+  bottom: -40px;
+  left: -80px;
+  background: radial-gradient(circle at 50% 50%, var(--purple-deep), color-mix(in srgb, var(--purple-deep) 30%, transparent) 60%, transparent 75%);
+}
+
+.body {
+  position: relative;
+  z-index: 10;
+  display: grid;
+  grid-template-columns: minmax(240px, 360px) 1fr;
+  align-items: center;
+  gap: 48px;
+  height: 100%;
+}
+
+.portraitCol {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 0;
+}
+
+.portrait {
+  width: 100%;
+  max-width: 340px;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 24px;
+  border: 1px solid var(--border);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.45);
+}
+
+.infoCol {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-width: 0;
+}
+
+.eyebrow {
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  color: var(--accent);
+}
+
+.title {
+  font-size: clamp(44px, 6vw, 72px);
+  font-weight: 800;
+  letter-spacing: -1.5px;
+  color: var(--foreground);
+  line-height: 1.05;
+}
+
+.subtitle {
+  font-size: clamp(18px, 2vw, 24px);
+  font-weight: 600;
+  color: var(--accent);
+  letter-spacing: -0.3px;
+}
+
+.name {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--muted-foreground);
+  margin-bottom: 6px;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.contact {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  color: var(--foreground);
+  font-size: 16px;
+  font-weight: 500;
+  width: fit-content;
+}
+
+.contact:hover .contactText {
+  color: var(--accent);
+  text-decoration: underline;
+}
+
+.contactIcon {
+  font-size: 20px;
+  width: 28px;
+  text-align: center;
+}
+
+.contactText {
+  letter-spacing: -0.2px;
+}

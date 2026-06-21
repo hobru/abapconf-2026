@@ -1,2 +1,18 @@
 @import '@deckio/deck-engine/styles/global.css';
 @import '@deckio/deck-engine/themes/dark.css';
+
+/* Speaker reminder keywords shown on the right side of each slide footer. */
+.slide-footer-keywords {
+  position: absolute;
+  bottom: 0;
+  right: var(--space-10);
+  height: var(--space-11);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: var(--font-size-xs);
+  letter-spacing: var(--letter-spacing-wider);
+  text-transform: uppercase;
+  color: var(--muted-foreground);
+  z-index: calc(var(--z-bar) + 1);
+}

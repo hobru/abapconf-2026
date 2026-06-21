@@ -10,7 +10,7 @@ export default function PVASlide({ index, project }) {
 
       <div className={`${styles.body} content-frame content-gutter`}>
         <div className={styles.header}>
-          <Editable as="p" id="pva.eyebrow" className={styles.eyebrow}>THE PROBLEM</Editable>
+          <Editable as="p" id="pva.eyebrow" className={styles.eyebrow}>THE PROBLEM — FIRST STEPS WITH AGENTS</Editable>
           <Editable as="h2" id="pva.title" className={styles.title}>Great Tools, Wrong Data, Missing Services</Editable>
           <Editable as="p" id="pva.subtitle" className={styles.subtitle}>Power Virtual Agents + Teams worked — but only for very specific demos</Editable>
         </div>
@@ -65,6 +65,9 @@ export default function PVASlide({ index, project }) {
         </div>
       </div>
 
+      <div className="slide-footer-keywords">
+        <Editable as="span" id="pva.keywords">SEGW</Editable>
+      </div>
       <BottomBar text={<Editable as="span" id="pva.footer">abapConf 2026</Editable>} />
     </Slide>
   )
