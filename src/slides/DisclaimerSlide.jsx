@@ -40,7 +40,7 @@ export default function DisclaimerSlide({ index, project }) {
               <span className={styles.character}>🏢</span>
               <div className={styles.bubble}>
                 <Editable as="p" id="disclaimer.panel2.text" className={styles.bubbleText}>
-                  All done against on-prem systems — S/4HANA and even ECC. My understanding: this was allowed.
+                  All done against on-prem systems — S/4HANA and even ECC.
                 </Editable>
               </div>
             </div>
