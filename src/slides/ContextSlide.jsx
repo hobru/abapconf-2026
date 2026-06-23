@@ -72,6 +72,13 @@ export default function ContextSlide({ index, project }) {
         </div>
       </div>
 
+      {revealed < stops.length && (
+        <div className={styles.revealHint}>
+          <span className={styles.revealHintKey}>↓</span>
+          <Editable as="span" id="context.revealHint">Press Arrow-Down to reveal the journey</Editable>
+        </div>
+      )}
+
       <div className="slide-footer-keywords">
         <Editable as="span" id="context.keywords" allowEmpty fallback="" />
       </div>

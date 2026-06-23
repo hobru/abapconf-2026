@@ -138,3 +138,38 @@
   gap: 6px 16px;
   margin-top: 4px;
 }
+
+.revealHint {
+  position: absolute;
+  bottom: 52px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--muted-foreground);
+  opacity: 0.85;
+  z-index: 5;
+}
+
+.revealHintKey {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--accent);
+  background: var(--card);
+  animation: revealHintBounce 1.4s ease-in-out infinite;
+}
+
+@keyframes revealHintBounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(3px); }
+}

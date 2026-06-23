@@ -74,6 +74,13 @@ export default function JourneyEarlySlide({ index, project }) {
         </div>
       </div>
 
+      {revealed < steps.length && (
+        <div className={styles.revealHint}>
+          <span className={styles.revealHintKey}>↓</span>
+          <Editable as="span" id="journeyEarly.revealHint">Press Arrow-Down to reveal each step</Editable>
+        </div>
+      )}
+
       <div className="slide-footer-keywords">
         <Editable as="span" id="journeyEarly.keywords">BAPI_FLIGHT_GETLIST | BAPI SALESORDER CREATEFROMDAT1 | /n/IWFND/MAINT_SERVICE | GWSAMPLE | GWCLIENT</Editable>
       </div>
