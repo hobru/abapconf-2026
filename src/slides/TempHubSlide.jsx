@@ -12,7 +12,7 @@ export default function TempHubSlide({ index, project }) {
       <div className={`${styles.body} content-frame content-gutter`}>
         <div className={styles.header}>
           <Editable as="p" id="tempHub.eyebrow" className={styles.eyebrow}>SAP @ MICROSOFT</Editable>
-          <Editable as="h2" id="tempHub.title" className={styles.title}>Temp Hub</Editable>
+          <Editable as="h2" id="tempHub.title" className={styles.title}>Tempo Hub</Editable>
         </div>
 
         <div className={styles.figure}>
