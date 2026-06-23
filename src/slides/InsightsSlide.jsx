@@ -12,7 +12,7 @@ export default function InsightsSlide({ index, project }) {
       <div className={`${styles.body} content-frame content-gutter`}>
         <div className={styles.header}>
           <Editable as="p" id="insights.eyebrow" className={styles.eyebrow}>SAP @ MICROSOFT</Editable>
-          <Editable as="h2" id="insights.title" className={styles.title}>From <span className={styles.highlightMy}>my</span> journey to <span className={styles.highlightSap}>SAP at Microsoft</span></Editable>
+          <Editable as="h2" id="insights.title" className={styles.title}>From <span className={styles.highlightMy}>my</span> journey to <span className={styles.highlightWhite}>SAP at</span> <span className={styles.highlightSap}>Microsoft</span></Editable>
         </div>
 
         <div className={styles.figure}>

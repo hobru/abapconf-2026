@@ -12,7 +12,7 @@ export default function AbapAdtSlide({ index, project }) {
       <div className={`${styles.body} content-frame content-gutter`}>
         <div className={styles.header}>
           <Editable as="p" id="abapAdt.eyebrow" className={styles.eyebrow}>SAP @ MICROSOFT</Editable>
-          <Editable as="h2" id="abapAdt.title" className={styles.title}>ABAP in ADT</Editable>
+          <Editable as="h2" id="abapAdt.title" className={styles.title}>ABAP Development Tools</Editable>
         </div>
 
         <div className={styles.figure}>

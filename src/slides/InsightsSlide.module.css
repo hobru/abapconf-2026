@@ -58,6 +58,11 @@
   font-weight: 800;
 }
 
+.highlightWhite {
+  color: #ffffff;
+  font-weight: 800;
+}
+
 .figure {
   flex: 1;
   min-height: 0;
